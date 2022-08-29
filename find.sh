@@ -10,5 +10,4 @@ output=$(grep -HRl --exclude-dir="$exclude" --exclude=\*.sh "$filesContainingTex
 for OUTPUT in ${output// / }
 do
     echo $OUTPUT
-    sed -i '' "s/$oldText/$newText/g" $OUTPUT
 done
